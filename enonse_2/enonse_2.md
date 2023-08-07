@@ -8,5 +8,4 @@ m gntan gen python sou machin lan
 3-Demare pwoje an: 
 python manage.py runserver
 4-Kanpe pwoje a :CTRL + C
-4-Redemarel sou pot 8080 :
-python manage.py runserver 8080
+4-Redemarel sou pot 8080 :python manage.py runserver 8080
