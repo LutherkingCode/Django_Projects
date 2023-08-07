@@ -5,6 +5,8 @@ m gntan gen python sou machin lan
 
 2-Kreye pwoje ou an: django-admin startproject non_proje
 
-3-python manage.py runserver
-
-4-python manage.py runserver 8080
+3-Demare pwoje an: 
+python manage.py runserver
+4-Kanpe pwoje a :CTRL + C
+4-Redemarel sou pot 8080 :
+python manage.py runserver 8080
