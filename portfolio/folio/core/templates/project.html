@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <title>My Projects</title>
+    <style>
+
+        .navbar {
+            background-color: #333;
+        }
+        
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center; /* Center the links */
+            align-items: center;
+            padding: 10px;
+        }
+        
+        .navbar li {
+            margin-right: 20px;
+        }
+        
+        .navbar li:last-child {
+            margin-right: 0;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        
+        .navbar a:hover {
+            background-color: #555;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h3{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .projects {
+            width: 30%;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            margin-bottom: 2rem;
+        }
+        .projects img {
+            max-width: 100%;
+            height: auto;
+        }
+        h1 {
+            text-align:center
+            font-size: 1.5rem;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin: 0.5rem 0;
+            padding-left: 1rem;
+            position: relative;
+        }
+        li:before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            
+            <li><a href="{% url 'core:akey' %}">Home</a></li>
+            <li><a href="{% url 'core:about' %}">About</a></li>
+            <li><a href="{% url 'core:skills' %}">Skills</a></li>
+            <li><a href="{% url 'core:projects' %}">Projects</a></li>
+            <li><a href="{% url 'contact:contact_formulaire' %}">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>My Projects</h1>
+
+    <div class="projects-container">
+    
+        <div class="projects">
+            <div>  <img src="{% static 'images\projects_image.jpg' %}" alt="Groupe Integrale Vigilence">  </div>
+            <h3>Technologies</h3>
+            <ul>
+                <li>Django Rest Framework API</li>
+                
+                <li>React.js</li>
+                 
+                <li>Tailwindcss</li>
+                <div class="lienDemogit"></div>
+                <a></a>
+                
+            </ul>
+        </div>
+        <div class="projects">
+            <div>  <img src="{% static 'images\projects_image.jpg' %}" alt="Groupe Integrale Vigilence">  </div>
+            <h3>Technologies</h3>
+            <ul>
+                <li>Django Rest Framework API</li>
+                
+                <li>React.js</li>
+                 
+                <li>Tailwindcss</li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="projects">
+            <div>  <img src="{% static 'images\projects_image.jpg' %}" alt="Groupe Integrale Vigilence">  </div>
+            <h3>Technologies</h3>
+            <ul>
+                <li>Django Rest Framework API</li>
+                
+                <li>React.js</li>
+                 
+                <li>Tailwindcss</li>
+                
+            </ul>
+        </div>
+</body>
+</html>

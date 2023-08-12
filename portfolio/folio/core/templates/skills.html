@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <title>My Skills</title>
+    <style>
+        .navbar {
+            background-color: #333;
+        }
+        
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center; /* Center the links */
+            align-items: center;
+            padding: 10px;
+        }
+        
+        .navbar li {
+            margin-right: 20px;
+        }
+        
+        .navbar li:last-child {
+            margin-right: 0;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        
+        .navbar a:hover {
+            background-color: #555;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            
+            color: black;
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .category {
+            background:black;
+            color:white;
+            width: 30%;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            margin-bottom: 2rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin: 0.5rem 0;
+            padding-left: 1rem;
+            position: relative;
+        }
+        li:before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+        
+            <li><a href="{% url 'core:akey' %}">Home</a></li>
+            <li><a href="{% url 'core:about' %}">About</a></li>
+            <li><a href="{% url 'core:skills' %}">Skills</a></li>
+            <li><a href="{% url 'core:projects' %}">Projects</a></li>
+            <li><a href="{% url 'contact:contact_formulaire' %}">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>My Skills</h1>
+
+    <div class="skills-container">
+        <div class="category">
+            <h2>Backend Development (Django)</h2>
+            <ul>
+                <li>Django Framework</li>
+                <li>RESTful APIs</li>
+                <li>Authentication and Authorization</li>
+                
+            </ul>
+        </div>
+
+        
+        <div class="category">
+            <h2>Frontend Development</h2>
+            <ul>
+                <li>JavaScript</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>React.js</li>
+            
+            </ul>
+        </div>
+
+        
+        <div class="category">
+            <h2>Database Management </h2>
+            <ul>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>Database Design</li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>

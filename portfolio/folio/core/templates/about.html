@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>folio</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+         <li><a href="{% url 'core:akey' %}">Home</a></li>
+            <li><a href="{% url 'core:about' %}">About</a></li>
+            <li><a href="{% url 'core:skills' %}">Skills</a></li>
+            <li><a href="{% url 'core:projects' %}">Projects</a></li>
+            <li><a href="{% url 'contact:contact_formulaire' %}">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <br></br>
+        
+        
+        <header>
+            <h1>HELLO, I AM LUTHERKING SENAT</h1>
+        </header>
+
+        <br></br>
+        
+        <section class="about">
+            <div class="contenu">
+                <p class="part1">
+                    I am a passionate software engineering student based in Canada, dedicated to the world of web development.
+                </p>
+                <br></br>
+               
+                <p class="part2">
+                    From crafting elegant user interfaces to optimizing intricate backend systems, I thrive in the realm of software development.
+                    Embracing the dynamic landscape of technology, I eagerly take on new challenges, staying ahead of the curve with innovative solutions.
+                </p>
+                   
+                <br></br>
+                <p class="part3">
+                    Throughout every stage of the software development lifecycle, from initial analysis to the exhilarating deployment,
+                    I am a vital and dynamic force, shaping and driving progress in each phase.
+                </p>
+                <br></br>
+                <div class="lienContact">
+                    <a href="{% url 'contact:contact_formulaire' %}" class="contact-btn">HIRE ME</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* home.css */
+
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+    background-color: #333;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the links */
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar li:last-child {
+    margin-right: 0;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #333;
+    font-size: 40px;
+    margin: 20px 0;
+    font-style: normal;
+}
+
+.part1 {
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.part2 {
+    font-size: 15px;
+    font-family: monospace;
+}
+
+.part3 {
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+}
+
+.contact-btn {
+    text-align: center;
+    color: #fff;
+    box-shadow: inset;
+    background-color: #333;
+    border-radius: 4px;
+    padding: 2%;
+    text-decoration: none;
+}
+
+
+
+.lienContact {
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

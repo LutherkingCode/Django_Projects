@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>folio</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{% url 'core:akey' %}">Home</a></li>
+            <li><a href="{% url 'core:about' %}">About</a></li>
+            <li><a href="{% url 'core:skills' %}">Skills</a></li>
+            <li><a href="{% url 'core:projects' %}">Projects</a></li>
+            <li><a href="{% url 'contact:contact_formulaire' %}">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <br></br>
+        
+        <header>
+            <h1>HELLO, I AM LUTHERKING SENAT</h1>
+        </header>
+
+        <br></br>
+        
+        <section class="about">
+            <div class="contenu">
+                <p class="part1">
+                    As a software engineer, I can transform your business ideas into reality through lines of code.
+                    With a passion for problem-solving and a love for technology, I bring innovation to life with precision and creativity.
+                </p>
+                <br></br>
+               
+                
+                <p class="part2">
+                    From building intuitive user interfaces to optimizing complex backend systems, I can manage the symphony of software development.
+                    In the ever-evolving landscape of technology, I embrace new challenges and stay at the forefront of cutting-edge advancements.
+                </p>
+                   
+                <br></br>
+                <p class="part3">
+                    Throughout the entire software development process, from the initial analysis to the thrilling deployment,
+                    I am a crucial and vibrant force, playing a pivotal role in every single phase!
+                </p>
+                <br></br>
+                <div class="lienContact">
+            <a href="{% url 'contact:contact_formulaire' %}" class="contact-btn">CONTACT ME</a>
+                <div>
+
+            </div>
+        </section>
+    </div>
+    <footer></footer>
+</body>
+</html>
