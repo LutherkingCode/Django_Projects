@@ -29,7 +29,7 @@ models.Personne.filter(score__gte=75).order_by('-score')
 models.objects.filter(enrollment_date__lte='2020-12-12')
 
 
- person = models.Person.objects.create(
+ person = models.Person(
     first_name="luther",
     last_name="king",
     email="lutherkingsenat@yahoo.com",
